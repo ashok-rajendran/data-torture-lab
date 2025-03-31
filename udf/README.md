@@ -7,6 +7,8 @@ The following files contain UDF functions designed to apply tokenization to secu
 - **DeKrypt_Fernet.py**
 - **EnKrypt_Fernet.py**
 
+In these UDFs, I have used open-source packages to tokenize and detokenize the data. However, in enterprise projects, Protegrity (an encryption technology company) typically provides UDF functions for applying tokenization.
+
 ---
 
 ### **nKrypt_hash.py**
