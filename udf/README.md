@@ -12,7 +12,7 @@ In these UDFs, I have used open-source packages to tokenize and detokenize the d
 ---
 
 ### **nKrypt_hash.py**
-This UDF can be used to tokenize a column using either the SHA-256 or MD5 function based on user input.
+This UDF can be used to tokenize a column using either the SHA-256 or MD5 function based on user input. These are oneway tokenization.
 
 **Example:**  
 ```sql
@@ -24,7 +24,7 @@ SELECT nKrypt_hash('IRONMAN', 'MD5'), nKrypt_hash('IRONMAN', 'SHA256');
 ---
 
 ### **nKrypt_rndm.sql**
-This UDF can be used to tokenize a column with random values, which cannot be detokenized.
+This UDF can be used to tokenize a column with random values, This is a oneway tokenization which cannot be detokenized.
 
 **Example:**  
 ```sql
