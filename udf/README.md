@@ -18,9 +18,6 @@ This UDF can be used to tokenize a column using either the SHA-256 or MD5 functi
 ```sql
 SELECT nKrypt_hash('IRONMAN', 'MD5'), nKrypt_hash('IRONMAN', 'SHA256');
 ```
-
-![nKrypt_hash Example](image1.png)
-
 ---
 
 ### **nKrypt_rndm.sql**
@@ -30,9 +27,6 @@ This UDF can be used to tokenize a column with random values, This is a oneway t
 ```sql
 SELECT nKrypt_rndm('HULK'), nKrypt_rndm('IRONMAN');
 ```
-
-![nKrypt_rndm Example](image2.png)
-
 ---
 
 ### **EnKrypt_Fernet.py & DeKrypt_Fernet.py**
