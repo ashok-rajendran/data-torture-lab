@@ -1,4 +1,4 @@
-create or replace function EnKrypt_AES(input_text string)
+create or replace function EnKrypt_Fernet(input_text string)
 returns string
 language python
 runtime_version = '3.8'
