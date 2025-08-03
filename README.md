@@ -2,7 +2,6 @@
 If you torture data enough, it will tell you the truth.
 
 ---
-# 📘 My Projects
 Here are some of the completed projects I've worked on:
 
 ---
