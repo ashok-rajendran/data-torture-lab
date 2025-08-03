@@ -1,7 +1,4 @@
-# data-torture-lab
-If you torture data enough, it will tell you the truth.
-
----
+# If you torture data enough, it will tell you the truth.
 Here are some of the completed projects I've worked on:
 
 ---
