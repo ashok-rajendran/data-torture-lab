@@ -1,0 +1,301 @@
+airport_code,airport_name,city,country,timezone,latitude,longitude
+AP001,East Jennifer Intl Airport,East Jennifer,Malawi,Asia/Harbin,-65.423574,30.972828
+AP002,Richardborough Intl Airport,Richardborough,Mexico,Europe/Prague,74.6888,11.667414
+AP003,North Sharonborough Intl Airport,North Sharonborough,Costa Rica,Europe/Prague,61.493203,24.189609
+AP004,Meganshire Intl Airport,Meganshire,Tokelau,Africa/Asmera,-67.131761,141.929991
+AP005,Fergusonhaven Intl Airport,Fergusonhaven,Samoa,Europe/Vilnius,19.139071,-111.47231
+AP006,Brightbury Intl Airport,Brightbury,Bolivia,Europe/Vienna,-49.656802,-105.954079
+AP007,East Dustin Intl Airport,East Dustin,Cyprus,Europe/Zagreb,5.115514,-73.782301
+AP008,East James Intl Airport,East James,Malawi,America/Jamaica,37.33528,102.436056
+AP009,Lauraburgh Intl Airport,Lauraburgh,Malaysia,America/Panama,48.414828,-140.665417
+AP010,Lake Sarah Intl Airport,Lake Sarah,Bahrain,Asia/Phnom_Penh,-45.050418,57.287354
+AP011,Diazside Intl Airport,Diazside,Nigeria,Africa/Johannesburg,-7.480395,9.005672
+AP012,Gomezstad Intl Airport,Gomezstad,Cyprus,America/Santiago,-56.861397,-91.926195
+AP013,Lake Andrew Intl Airport,Lake Andrew,Serbia,Asia/Irkutsk,19.92334,44.369177
+AP014,Murrayside Intl Airport,Murrayside,Svalbard & Jan Mayen Islands,Africa/Libreville,19.29231,91.461516
+AP015,North Brookeshire Intl Airport,North Brookeshire,Romania,Africa/Bissau,-36.986674,-72.218805
+AP016,Coxton Intl Airport,Coxton,Samoa,Pacific/Nauru,19.231642,35.761829
+AP017,South Autumnberg Intl Airport,South Autumnberg,Albania,America/La_Paz,19.286236,143.694452
+AP018,Richardsonton Intl Airport,Richardsonton,Egypt,Europe/Vienna,-65.705338,165.481343
+AP019,East Samantha Intl Airport,East Samantha,Panama,America/Barbados,19.035542,-45.295149
+AP020,Jenniferborough Intl Airport,Jenniferborough,South Africa,America/Paramaribo,6.848048,160.759224
+AP021,Clarkfort Intl Airport,Clarkfort,Czech Republic,Europe/Luxembourg,39.938126,50.473308
+AP022,Robertchester Intl Airport,Robertchester,Denmark,Africa/Casablanca,-47.161282,-117.949696
+AP023,Wrightbury Intl Airport,Wrightbury,Serbia,Europe/Monaco,31.301231,64.943469
+AP024,North Lori Intl Airport,North Lori,Burundi,Asia/Nicosia,-45.868116,-116.846237
+AP025,East Justin Intl Airport,East Justin,Maldives,Europe/Warsaw,-61.859158,143.151793
+AP026,Blackburnberg Intl Airport,Blackburnberg,French Polynesia,Europe/Istanbul,-2.509323,-174.017971
+AP027,East Paul Intl Airport,East Paul,Honduras,Asia/Kabul,28.486497,-93.648791
+AP028,Saundersside Intl Airport,Saundersside,British Indian Ocean Territory (Chagos Archipelago),Africa/Nouakchott,68.210375,-104.756266
+AP029,Lake Ashleyton Intl Airport,Lake Ashleyton,Croatia,Africa/Dar_es_Salaam,-78.534096,-177.703318
+AP030,New Haroldville Intl Airport,New Haroldville,Burundi,Asia/Dhaka,51.642683,97.540491
+AP031,North Jesus Intl Airport,North Jesus,Denmark,Europe/Tallinn,-64.040734,-127.478134
+AP032,South Cindy Intl Airport,South Cindy,Slovenia,Europe/Sofia,-82.024638,43.104663
+AP033,Arnoldside Intl Airport,Arnoldside,Malawi,Asia/Saigon,-56.339196,101.794848
+AP034,Royview Intl Airport,Royview,Maldives,America/Havana,-64.596846,9.410613
+AP035,Samanthaview Intl Airport,Samanthaview,Cote d'Ivoire,Europe/Amsterdam,-51.312976,175.916992
+AP036,Port Nicholasshire Intl Airport,Port Nicholasshire,Tonga,Africa/Porto-Novo,88.893532,7.894176
+AP037,South Jose Intl Airport,South Jose,Chad,Asia/Bangkok,-77.629705,-42.67586
+AP038,New Rebecca Intl Airport,New Rebecca,Nigeria,Asia/Brunei,-52.434654,-29.6081
+AP039,North Laurafurt Intl Airport,North Laurafurt,India,America/Havana,-49.498754,58.044113
+AP040,East Donaldside Intl Airport,East Donaldside,Greenland,Asia/Rangoon,-40.884955,-16.537063
+AP041,Adamchester Intl Airport,Adamchester,United Kingdom,America/St_Lucia,36.780803,-42.375119
+AP042,West Nicoleshire Intl Airport,West Nicoleshire,Turkey,Africa/Casablanca,-80.564356,-166.226934
+AP043,East Emilyberg Intl Airport,East Emilyberg,Kenya,Africa/Windhoek,44.823394,-53.978877
+AP044,Karenfort Intl Airport,Karenfort,Cuba,Africa/Nouakchott,71.020442,-64.298767
+AP045,North Davidhaven Intl Airport,North Davidhaven,Western Sahara,America/Barbados,89.496015,105.467581
+AP046,Carolynbury Intl Airport,Carolynbury,Fiji,Europe/Minsk,-14.734374,170.51132
+AP047,Victorshire Intl Airport,Victorshire,Mayotte,America/Havana,80.628079,66.330419
+AP048,Johnchester Intl Airport,Johnchester,Burkina Faso,Europe/Chisinau,-2.256998,-124.449414
+AP049,Lake April Intl Airport,Lake April,Romania,Europe/Malta,-21.836489,139.045247
+AP050,East Sara Intl Airport,East Sara,Senegal,Europe/Prague,-83.21888,61.01327
+AP051,Port Sharonburgh Intl Airport,Port Sharonburgh,Palestinian Territory,Africa/Bissau,-40.310541,80.229971
+AP052,East Warrenburgh Intl Airport,East Warrenburgh,Greece,Asia/Irkutsk,15.861538,-84.548183
+AP053,West Austin Intl Airport,West Austin,Sierra Leone,Indian/Comoro,-15.31816,27.562832
+AP054,East Kristiton Intl Airport,East Kristiton,Barbados,Asia/Bangkok,-67.42223,38.625592
+AP055,Laurenfort Intl Airport,Laurenfort,Saudi Arabia,Asia/Qatar,-58.04777,176.11085
+AP056,Clarkburgh Intl Airport,Clarkburgh,Albania,Africa/Lubumbashi,74.096396,47.659259
+AP057,Andrewshire Intl Airport,Andrewshire,Cook Islands,Africa/Lubumbashi,32.306566,52.919212
+AP058,Port John Intl Airport,Port John,Burkina Faso,America/Guayaquil,62.120269,-85.728692
+AP059,South Toddport Intl Airport,South Toddport,Angola,Europe/Vienna,11.847919,-140.042445
+AP060,Caseychester Intl Airport,Caseychester,Poland,Africa/Khartoum,72.660417,-69.685873
+AP061,Madisonport Intl Airport,Madisonport,Burkina Faso,Africa/Freetown,78.059332,-23.360401
+AP062,South Patrick Intl Airport,South Patrick,Austria,Europe/Chisinau,-17.092692,-74.537203
+AP063,Rodriguezville Intl Airport,Rodriguezville,Niue,Asia/Seoul,8.395065,111.911364
+AP064,North Christinaland Intl Airport,North Christinaland,France,Europe/Amsterdam,41.234697,-161.461092
+AP065,Port Brianville Intl Airport,Port Brianville,Hong Kong,Africa/Conakry,84.136517,-93.385474
+AP066,Elizabethstad Intl Airport,Elizabethstad,Bhutan,Africa/Bamako,26.589633,-16.579238
+AP067,Evansside Intl Airport,Evansside,Austria,Africa/Tunis,-34.930949,147.641342
+AP068,Carlatown Intl Airport,Carlatown,Slovenia,Europe/Lisbon,22.826397,-38.791599
+AP069,East Kaitlynmouth Intl Airport,East Kaitlynmouth,Cocos (Keeling) Islands,Africa/Gaborone,-55.630341,-95.088654
+AP070,Lake Lorishire Intl Airport,Lake Lorishire,Antarctica (the territory South of 60 deg S),Pacific/Majuro,-71.773803,-14.703185
+AP071,North Ashleytown Intl Airport,North Ashleytown,Mayotte,Asia/Beirut,-38.785303,-72.803576
+AP072,Johnsonside Intl Airport,Johnsonside,Togo,Asia/Baghdad,73.951992,-103.098091
+AP073,East Lindamouth Intl Airport,East Lindamouth,Argentina,Pacific/Chatham,59.901514,106.118248
+AP074,Karenfort Intl Airport,Karenfort,Korea,Europe/Warsaw,-65.488309,-145.96815
+AP075,Smithview Intl Airport,Smithview,Slovakia (Slovak Republic),Africa/Lubumbashi,45.146248,-174.338176
+AP076,Lake Natalieshire Intl Airport,Lake Natalieshire,Palestinian Territory,America/Belize,-35.611488,-22.41638
+AP077,Cindychester Intl Airport,Cindychester,Iceland,Europe/Berlin,43.9447,115.597837
+AP078,West Larryshire Intl Airport,West Larryshire,Vanuatu,Europe/Berlin,53.333425,175.892392
+AP079,South Mariamouth Intl Airport,South Mariamouth,Guatemala,America/Montevideo,-28.813364,55.867392
+AP080,Richardhaven Intl Airport,Richardhaven,Nicaragua,America/Caracas,-9.055034,-53.406877
+AP081,East Suzanne Intl Airport,East Suzanne,Cayman Islands,Asia/Dubai,-31.558861,142.921051
+AP082,Jenniferstad Intl Airport,Jenniferstad,British Indian Ocean Territory (Chagos Archipelago),Europe/Tallinn,-52.559543,135.282401
+AP083,East Michaelfort Intl Airport,East Michaelfort,Finland,Asia/Calcutta,-89.74054,57.354159
+AP084,Sanchezfort Intl Airport,Sanchezfort,Burkina Faso,Africa/Kinshasa,49.44352,-10.717048
+AP085,Katherineshire Intl Airport,Katherineshire,Guam,Asia/Katmandu,26.534886,-112.537519
+AP086,Jonesland Intl Airport,Jonesland,Nicaragua,Europe/Brussels,-29.007613,-154.061569
+AP087,Arnoldstad Intl Airport,Arnoldstad,Netherlands Antilles,Africa/Ndjamena,69.094434,-58.037763
+AP088,West Michaelfurt Intl Airport,West Michaelfurt,Nigeria,Asia/Qatar,62.233629,-11.440969
+AP089,Amandaton Intl Airport,Amandaton,United Kingdom,Europe/Bratislava,49.16218,-143.824851
+AP090,New Ashley Intl Airport,New Ashley,Indonesia,Asia/Kuala_Lumpur,15.72567,-27.271245
+AP091,North Michealhaven Intl Airport,North Michealhaven,British Indian Ocean Territory (Chagos Archipelago),Europe/Berlin,-23.764815,165.792833
+AP092,West Richard Intl Airport,West Richard,French Polynesia,Asia/Calcutta,43.832952,-89.839737
+AP093,Kevinport Intl Airport,Kevinport,Russian Federation,Asia/Vientiane,-18.115896,-36.297421
+AP094,Kaylaland Intl Airport,Kaylaland,Cook Islands,America/Managua,79.720689,-89.033242
+AP095,Meltonstad Intl Airport,Meltonstad,Zimbabwe,Europe/Sarajevo,-53.3321,115.331831
+AP096,Port David Intl Airport,Port David,Latvia,Asia/Aden,-65.885596,-8.12263
+AP097,West Jamesstad Intl Airport,West Jamesstad,Ethiopia,Asia/Phnom_Penh,23.126047,-14.300153
+AP098,Jonathanhaven Intl Airport,Jonathanhaven,Cyprus,Asia/Tehran,34.483365,-28.743825
+AP099,Laurentown Intl Airport,Laurentown,Gabon,Atlantic/Reykjavik,73.480848,-99.675798
+AP100,Richardfort Intl Airport,Richardfort,Uruguay,Europe/Vilnius,17.0708,149.209941
+AP101,Keithshire Intl Airport,Keithshire,Tokelau,Europe/Luxembourg,53.630947,178.950528
+AP102,Williamsfurt Intl Airport,Williamsfurt,Portugal,Pacific/Chatham,-59.192101,9.036239
+AP103,Christopherport Intl Airport,Christopherport,Jersey,Europe/Vaduz,-42.588926,-149.207302
+AP104,Calderonchester Intl Airport,Calderonchester,Indonesia,Asia/Singapore,-80.648111,-54.947661
+AP105,Williammouth Intl Airport,Williammouth,Grenada,America/Tegucigalpa,-34.499477,-134.101582
+AP106,Cannonmouth Intl Airport,Cannonmouth,Russian Federation,Asia/Katmandu,24.279206,-34.52352
+AP107,Garnerville Intl Airport,Garnerville,Jamaica,Europe/Riga,-56.992784,62.998412
+AP108,Eddiebury Intl Airport,Eddiebury,Korea,America/St_Lucia,61.471636,123.429333
+AP109,Brianshire Intl Airport,Brianshire,Australia,Indian/Antananarivo,73.750895,-81.678175
+AP110,Lake Waynehaven Intl Airport,Lake Waynehaven,Palau,Europe/Podgorica,-60.030459,62.638631
+AP111,South Tonya Intl Airport,South Tonya,Wallis and Futuna,Asia/Nicosia,-58.053302,64.971034
+AP112,Kathrynstad Intl Airport,Kathrynstad,Bolivia,America/Antigua,-17.470259,130.512478
+AP113,Hendersonside Intl Airport,Hendersonside,New Zealand,Africa/Ouagadougou,60.472558,-73.504649
+AP114,Collinsview Intl Airport,Collinsview,Hong Kong,Pacific/Fiji,46.711581,-92.253454
+AP115,Ericaville Intl Airport,Ericaville,Macao,Atlantic/Cape_Verde,15.04821,111.017859
+AP116,North Megan Intl Airport,North Megan,Bahrain,Europe/Bratislava,-88.207253,-142.384326
+AP117,Port Anna Intl Airport,Port Anna,Ukraine,Asia/Katmandu,27.894187,97.441092
+AP118,Castroborough Intl Airport,Castroborough,Barbados,Asia/Katmandu,-81.822022,10.743763
+AP119,West Alexisfort Intl Airport,West Alexisfort,Spain,Pacific/Funafuti,6.567485,13.787129
+AP120,Jacksonshire Intl Airport,Jacksonshire,Algeria,Africa/Johannesburg,-3.494632,138.368963
+AP121,South Maryview Intl Airport,South Maryview,Sweden,Europe/Zagreb,-51.613566,-67.988407
+AP122,West Lisaberg Intl Airport,West Lisaberg,Nigeria,Africa/Harare,-1.400999,-53.675536
+AP123,Millerbury Intl Airport,Millerbury,Afghanistan,Indian/Maldives,44.933617,3.808835
+AP124,Morganbury Intl Airport,Morganbury,Kuwait,America/El_Salvador,89.645538,22.287287
+AP125,West Diane Intl Airport,West Diane,Sweden,Africa/Maseru,80.069213,49.938339
+AP126,New Dwayneshire Intl Airport,New Dwayneshire,Italy,Europe/Bucharest,-54.480346,-80.056265
+AP127,Johnsonstad Intl Airport,Johnsonstad,Sudan,Africa/Kampala,-0.195629,130.914103
+AP128,Harrisview Intl Airport,Harrisview,United Arab Emirates,Europe/Simferopol,-28.259167,-51.827944
+AP129,Christineport Intl Airport,Christineport,Honduras,Pacific/Fiji,-65.850593,-24.624825
+AP130,East Joyce Intl Airport,East Joyce,Cuba,Asia/Shanghai,-32.754666,85.659583
+AP131,West Andrew Intl Airport,West Andrew,Marshall Islands,Asia/Hebron,20.443639,-31.048765
+AP132,Torresfurt Intl Airport,Torresfurt,Mauritius,America/La_Paz,-68.825275,21.737126
+AP133,East Sarah Intl Airport,East Sarah,Sweden,America/Costa_Rica,-41.30897,-31.133009
+AP134,South Debra Intl Airport,South Debra,Reunion,Europe/Dublin,-76.045282,-35.41425
+AP135,Lake Raymond Intl Airport,Lake Raymond,Antigua and Barbuda,Africa/Ndjamena,-4.701462,45.353515
+AP136,Rodriguezfurt Intl Airport,Rodriguezfurt,Tanzania,Africa/Algiers,1.640637,-134.35023
+AP137,Mariahton Intl Airport,Mariahton,Fiji,Pacific/Apia,-6.207237,40.801105
+AP138,East Tiffanyview Intl Airport,East Tiffanyview,French Guiana,Africa/Addis_Ababa,56.803593,140.8495
+AP139,Fernandeztown Intl Airport,Fernandeztown,India,Europe/Tirane,-84.312447,23.516656
+AP140,Alexandraside Intl Airport,Alexandraside,Syrian Arab Republic,Asia/Jayapura,-50.488017,19.578943
+AP141,Catherinechester Intl Airport,Catherinechester,Panama,Africa/Malabo,39.781565,-45.108966
+AP142,South Paulborough Intl Airport,South Paulborough,Honduras,Asia/Saigon,-88.002061,-40.912266
+AP143,Port Ethan Intl Airport,Port Ethan,Bahamas,Europe/Riga,20.369931,159.615049
+AP144,Matthewburgh Intl Airport,Matthewburgh,Argentina,Asia/Qyzylorda,76.891482,54.324173
+AP145,Port Brendaville Intl Airport,Port Brendaville,Eritrea,Asia/Rangoon,-22.53986,153.085812
+AP146,Geoffreytown Intl Airport,Geoffreytown,Costa Rica,Europe/Zagreb,-72.606068,102.160449
+AP147,East Don Intl Airport,East Don,Nepal,Africa/Blantyre,11.708194,-58.674499
+AP148,North Virginia Intl Airport,North Virginia,Colombia,Africa/Banjul,-6.905517,131.647922
+AP149,Thomasshire Intl Airport,Thomasshire,Iceland,Europe/Oslo,4.204684,-77.043525
+AP150,Rachelmouth Intl Airport,Rachelmouth,Jersey,Africa/Kigali,41.800975,118.289663
+AP151,Andersonhaven Intl Airport,Andersonhaven,Somalia,Pacific/Palau,-42.18144,-43.266574
+AP152,Gomezport Intl Airport,Gomezport,Reunion,Africa/Lome,-82.971099,-88.495901
+AP153,South Gregoryshire Intl Airport,South Gregoryshire,Greenland,Africa/Kinshasa,-11.52138,-87.309519
+AP154,East Edward Intl Airport,East Edward,Anguilla,Pacific/Enderbury,-42.941645,-151.600146
+AP155,West Carolside Intl Airport,West Carolside,Kiribati,Africa/Tripoli,-71.855713,-38.261914
+AP156,Pamelafurt Intl Airport,Pamelafurt,Saint Helena,Pacific/Majuro,4.152186,-172.535594
+AP157,South Tammy Intl Airport,South Tammy,Seychelles,America/Monterrey,38.870165,139.421468
+AP158,Dominiqueborough Intl Airport,Dominiqueborough,Burkina Faso,Asia/Aqtau,19.614238,15.48917
+AP159,New Heatherhaven Intl Airport,New Heatherhaven,Cameroon,Europe/Monaco,-62.889951,-145.088787
+AP160,West Andreville Intl Airport,West Andreville,Cyprus,America/Tegucigalpa,-60.27906,121.688618
+AP161,Laurafort Intl Airport,Laurafort,Nepal,Indian/Comoro,11.839446,-141.637808
+AP162,Lake Kristin Intl Airport,Lake Kristin,Wallis and Futuna,Europe/Skopje,-45.693009,-131.312745
+AP163,Jeanetteside Intl Airport,Jeanetteside,Morocco,Africa/Mogadishu,66.078418,-42.060653
+AP164,East Jessica Intl Airport,East Jessica,Botswana,Europe/Vilnius,-53.551206,-31.155105
+AP165,Saunderston Intl Airport,Saunderston,South Georgia and the South Sandwich Islands,Asia/Dhaka,-41.911206,175.544342
+AP166,New Justinville Intl Airport,New Justinville,Faroe Islands,Asia/Taipei,-69.618231,27.46683
+AP167,Donaldborough Intl Airport,Donaldborough,Bouvet Island (Bouvetoya),Asia/Damascus,-50.369549,116.047073
+AP168,Lake Timothyberg Intl Airport,Lake Timothyberg,Marshall Islands,America/Montevideo,-77.209987,-76.48706
+AP169,Lawsonhaven Intl Airport,Lawsonhaven,British Virgin Islands,America/Argentina/La_Rioja,-53.698197,137.253667
+AP170,Stokesmouth Intl Airport,Stokesmouth,Ireland,Asia/Kuwait,18.021328,120.643269
+AP171,East Jamesville Intl Airport,East Jamesville,American Samoa,Pacific/Easter,24.976725,166.183279
+AP172,North Kaitlynview Intl Airport,North Kaitlynview,Grenada,Asia/Brunei,51.291788,30.15663
+AP173,New Andrewhaven Intl Airport,New Andrewhaven,Ghana,America/St_Lucia,29.584855,-158.772062
+AP174,East Tarafort Intl Airport,East Tarafort,Guernsey,America/Jamaica,69.364353,-134.784249
+AP175,Perezstad Intl Airport,Perezstad,Montenegro,Africa/Porto-Novo,12.431964,172.654175
+AP176,Port Alexanderchester Intl Airport,Port Alexanderchester,Timor-Leste,Asia/Qatar,72.350215,150.717699
+AP177,Port Royborough Intl Airport,Port Royborough,Western Sahara,Europe/Stockholm,56.430495,111.46314
+AP178,Bonniemouth Intl Airport,Bonniemouth,Gambia,Europe/Vilnius,11.997654,35.799492
+AP179,Mackenzieshire Intl Airport,Mackenzieshire,Suriname,Pacific/Apia,-86.281943,-163.254731
+AP180,Emilyland Intl Airport,Emilyland,Kazakhstan,America/Nassau,84.861952,-170.19553
+AP181,New Shelly Intl Airport,New Shelly,Tajikistan,Asia/Phnom_Penh,53.143068,95.419227
+AP182,Elizabethmouth Intl Airport,Elizabethmouth,Hong Kong,America/La_Paz,-82.304549,-34.202524
+AP183,Port Jason Intl Airport,Port Jason,Slovakia (Slovak Republic),Asia/Singapore,72.146027,173.178903
+AP184,West James Intl Airport,West James,Czech Republic,America/Antigua,-29.081264,27.995332
+AP185,North Garychester Intl Airport,North Garychester,Palestinian Territory,America/Panama,-5.239485,-14.424534
+AP186,South Austinmouth Intl Airport,South Austinmouth,San Marino,Asia/Tokyo,8.602813,-102.617742
+AP187,West Janet Intl Airport,West Janet,Sudan,Africa/Algiers,-80.981259,163.142995
+AP188,Taylorton Intl Airport,Taylorton,Bahrain,Asia/Bahrain,-6.166331,-88.290611
+AP189,Mclaughlinburgh Intl Airport,Mclaughlinburgh,Cape Verde,Africa/Tunis,66.591363,67.027486
+AP190,North Casey Intl Airport,North Casey,Aruba,Europe/Ljubljana,-78.983391,-121.623455
+AP191,East Jay Intl Airport,East Jay,Guadeloupe,Asia/Baku,58.617291,-21.748295
+AP192,Garciachester Intl Airport,Garciachester,Honduras,Pacific/Palau,65.403802,67.256568
+AP193,East Ericchester Intl Airport,East Ericchester,Tunisia,Australia/Perth,-73.117418,-92.860883
+AP194,New Daniel Intl Airport,New Daniel,Solomon Islands,Africa/Kampala,-53.650599,12.109446
+AP195,Smithton Intl Airport,Smithton,Fiji,Africa/Windhoek,-46.410584,162.043502
+AP196,Velezfurt Intl Airport,Velezfurt,French Polynesia,America/Iqaluit,-61.359399,23.724318
+AP197,Travisstad Intl Airport,Travisstad,Faroe Islands,Asia/Saigon,25.557432,119.897273
+AP198,Littleton Intl Airport,Littleton,Kuwait,Africa/Tripoli,-39.652648,28.238718
+AP199,Petersonberg Intl Airport,Petersonberg,French Southern Territories,America/Anchorage,12.616451,-27.768132
+AP200,Robertfort Intl Airport,Robertfort,Trinidad and Tobago,America/Montevideo,-61.072794,24.813596
+AP201,Lindaburgh Intl Airport,Lindaburgh,Ireland,America/Lima,-77.393973,178.088389
+AP202,Lake Davidton Intl Airport,Lake Davidton,Algeria,Europe/Budapest,8.139266,162.032641
+AP203,Carterberg Intl Airport,Carterberg,Haiti,Pacific/Easter,-1.22399,73.817919
+AP204,Barbarafort Intl Airport,Barbarafort,United States of America,Pacific/Apia,43.317867,-143.982261
+AP205,Nataliemouth Intl Airport,Nataliemouth,Korea,America/Jamaica,54.278118,-107.303704
+AP206,Mcconnellland Intl Airport,Mcconnellland,United Kingdom,America/Cancun,37.324185,-31.397674
+AP207,Kayleefurt Intl Airport,Kayleefurt,Belgium,Africa/Dar_es_Salaam,-64.550245,-76.151023
+AP208,Smithbury Intl Airport,Smithbury,Falkland Islands (Malvinas),Asia/Seoul,36.15188,120.152535
+AP209,Lesterton Intl Airport,Lesterton,Yemen,America/La_Paz,-73.994807,15.498149
+AP210,South Amber Intl Airport,South Amber,Guinea-Bissau,America/Maceio,47.03597,-49.528734
+AP211,Paigeburgh Intl Airport,Paigeburgh,Yemen,Asia/Vientiane,66.619975,127.395628
+AP212,Orrport Intl Airport,Orrport,Armenia,America/La_Paz,67.515011,-49.442934
+AP213,North Brittany Intl Airport,North Brittany,Sri Lanka,Europe/Zagreb,40.82053,135.287319
+AP214,Chelseabury Intl Airport,Chelseabury,Nicaragua,America/Argentina/La_Rioja,-36.199258,137.443518
+AP215,Millerton Intl Airport,Millerton,Faroe Islands,Asia/Kabul,44.949241,13.076447
+AP216,Lake Andreatown Intl Airport,Lake Andreatown,Iran,Europe/London,48.104306,-107.267501
+AP217,East Mark Intl Airport,East Mark,Belgium,America/Cuiaba,-85.262253,-22.454398
+AP218,West Robertview Intl Airport,West Robertview,Bhutan,America/Dominica,5.051315,-34.946263
+AP219,New Cynthiaburgh Intl Airport,New Cynthiaburgh,Syrian Arab Republic,Asia/Phnom_Penh,88.97178,-79.665963
+AP220,Kellyhaven Intl Airport,Kellyhaven,Mauritius,Africa/Tripoli,39.519549,159.636449
+AP221,Robertmouth Intl Airport,Robertmouth,Antarctica (the territory South of 60 deg S),Asia/Dubai,-43.53132,-92.504691
+AP222,Spencerfurt Intl Airport,Spencerfurt,Norway,America/Indiana/Petersburg,-89.89273,-170.896814
+AP223,New Linda Intl Airport,New Linda,Serbia,Europe/Zagreb,-30.467507,45.09657
+AP224,Johnsonfort Intl Airport,Johnsonfort,Saint Helena,Africa/Djibouti,-71.126495,-150.290512
+AP225,Millertown Intl Airport,Millertown,Taiwan,America/Guayaquil,1.891879,34.426505
+AP226,North Andrea Intl Airport,North Andrea,Belize,Pacific/Efate,-46.117664,-173.308595
+AP227,Shieldsport Intl Airport,Shieldsport,Belgium,Africa/Maputo,47.145902,-59.681364
+AP228,Williamchester Intl Airport,Williamchester,Dominica,Europe/Riga,86.957753,-70.862059
+AP229,New Katherine Intl Airport,New Katherine,Netherlands,Asia/Rangoon,-6.012181,64.287315
+AP230,Mezabury Intl Airport,Mezabury,Norfolk Island,Asia/Bishkek,53.252248,-63.884292
+AP231,Gutierrezton Intl Airport,Gutierrezton,American Samoa,Pacific/Funafuti,-16.631404,8.446433
+AP232,Kevinfurt Intl Airport,Kevinfurt,Oman,Europe/Vaduz,-23.34031,-36.406284
+AP233,North Randyburgh Intl Airport,North Randyburgh,Chad,Africa/Mogadishu,3.586169,100.313239
+AP234,Ashleyton Intl Airport,Ashleyton,Hong Kong,America/Paramaribo,84.108024,137.601356
+AP235,Staceyfurt Intl Airport,Staceyfurt,Grenada,Europe/Sofia,9.617441,148.319418
+AP236,Laurenview Intl Airport,Laurenview,Isle of Man,America/St_Vincent,47.928258,-101.992893
+AP237,Hallburgh Intl Airport,Hallburgh,Tajikistan,Atlantic/Cape_Verde,-55.547806,72.243003
+AP238,Lopezside Intl Airport,Lopezside,Bulgaria,Europe/Berlin,33.884339,-52.692207
+AP239,South Donaldfurt Intl Airport,South Donaldfurt,Korea,Africa/Lome,70.827502,-28.520762
+AP240,South James Intl Airport,South James,Burkina Faso,Asia/Kuwait,-67.602109,59.32164
+AP241,Nelsonberg Intl Airport,Nelsonberg,Zimbabwe,Pacific/Port_Moresby,-7.384772,-116.616444
+AP242,Andreaton Intl Airport,Andreaton,Indonesia,America/Guyana,-70.016683,153.211687
+AP243,Lake Gregoryview Intl Airport,Lake Gregoryview,Svalbard & Jan Mayen Islands,America/Managua,-68.579521,163.345627
+AP244,Roseville Intl Airport,Roseville,Egypt,Africa/Dakar,-1.392313,-36.2408
+AP245,Mollychester Intl Airport,Mollychester,Solomon Islands,Asia/Dubai,61.932135,-63.920989
+AP246,South Dawn Intl Airport,South Dawn,American Samoa,Pacific/Fiji,51.183887,-65.940462
+AP247,West Maryside Intl Airport,West Maryside,Norfolk Island,Africa/Porto-Novo,-10.587364,-115.762975
+AP248,North Rachelton Intl Airport,North Rachelton,Saint Pierre and Miquelon,Europe/Andorra,42.885824,-79.118747
+AP249,Faulknerborough Intl Airport,Faulknerborough,Saint Helena,Africa/Maputo,-84.922335,-32.125049
+AP250,Jacksonbury Intl Airport,Jacksonbury,Norfolk Island,America/Guyana,12.750901,113.821922
+AP251,Lopezview Intl Airport,Lopezview,Italy,Africa/Luanda,-13.802876,-56.228108
+AP252,Lake Johnchester Intl Airport,Lake Johnchester,British Virgin Islands,America/Port_of_Spain,-10.748105,-127.798503
+AP253,Lake Amanda Intl Airport,Lake Amanda,Venezuela,America/Guayaquil,63.811615,-135.987282
+AP254,Davismouth Intl Airport,Davismouth,Syrian Arab Republic,Africa/Niamey,23.513184,-146.703646
+AP255,Alexandraton Intl Airport,Alexandraton,Namibia,Europe/Madrid,-82.801796,-96.483449
+AP256,Jenniferchester Intl Airport,Jenniferchester,Isle of Man,Pacific/Auckland,27.40795,159.455112
+AP257,Davidport Intl Airport,Davidport,Czech Republic,Europe/Vilnius,18.771294,-50.974384
+AP258,Charlesshire Intl Airport,Charlesshire,Chile,Africa/Tripoli,2.039445,67.248832
+AP259,West Bobby Intl Airport,West Bobby,Angola,Asia/Chongqing,-61.859981,147.499012
+AP260,Doyleland Intl Airport,Doyleland,Bolivia,Africa/Addis_Ababa,47.30181,157.101605
+AP261,Porterville Intl Airport,Porterville,Belarus,America/Guayaquil,-69.458191,-100.506586
+AP262,Mcintoshtown Intl Airport,Mcintoshtown,Gabon,Asia/Kuwait,78.219951,102.430348
+AP263,Schultzton Intl Airport,Schultzton,Jersey,Asia/Jayapura,-29.636386,108.33557
+AP264,South Gail Intl Airport,South Gail,Tajikistan,America/Santo_Domingo,-53.169543,74.335655
+AP265,Lake Davidbury Intl Airport,Lake Davidbury,Ukraine,Asia/Colombo,70.015242,94.078976
+AP266,Lake Lauraport Intl Airport,Lake Lauraport,Saint Vincent and the Grenadines,Europe/Athens,15.293461,67.180724
+AP267,Matthewport Intl Airport,Matthewport,New Caledonia,Asia/Bangkok,-63.944468,-71.280999
+AP268,West Andrea Intl Airport,West Andrea,Canada,America/Barbados,-68.170712,12.270396
+AP269,Lake Rachel Intl Airport,Lake Rachel,Holy See (Vatican City State),America/Nassau,25.036479,57.529331
+AP270,Hernandezchester Intl Airport,Hernandezchester,Antigua and Barbuda,Africa/Dar_es_Salaam,76.61526,157.235967
+AP271,North Kristen Intl Airport,North Kristen,Poland,Atlantic/Cape_Verde,32.60787,28.280965
+AP272,New Mariatown Intl Airport,New Mariatown,India,Asia/Dubai,-15.095686,-120.001696
+AP273,Perezstad Intl Airport,Perezstad,Maldives,America/Costa_Rica,13.743427,41.891111
+AP274,Clarkstad Intl Airport,Clarkstad,Bhutan,America/Tegucigalpa,-10.289022,-65.948006
+AP275,Annetteton Intl Airport,Annetteton,Christmas Island,Africa/Khartoum,53.799063,133.960435
+AP276,Smithbury Intl Airport,Smithbury,Morocco,America/Guatemala,53.103572,68.286079
+AP277,Abigailland Intl Airport,Abigailland,Cyprus,America/Belize,-35.293462,140.167457
+AP278,North Emilyfurt Intl Airport,North Emilyfurt,Tanzania,Europe/Prague,-78.937712,-145.07945
+AP279,Peterside Intl Airport,Peterside,Falkland Islands (Malvinas),Europe/Stockholm,-59.227072,-6.900957
+AP280,Meganchester Intl Airport,Meganchester,Falkland Islands (Malvinas),America/Guyana,-42.509121,-20.374957
+AP281,Longfurt Intl Airport,Longfurt,Iceland,Atlantic/Reykjavik,62.665163,134.277241
+AP282,West Caleb Intl Airport,West Caleb,South Africa,America/Antigua,36.464232,138.38965
+AP283,Blackburnview Intl Airport,Blackburnview,Saint Barthelemy,Asia/Dushanbe,-69.448305,-64.384792
+AP284,New Sarahport Intl Airport,New Sarahport,Azerbaijan,Europe/Tirane,-23.944676,18.393303
+AP285,Villaland Intl Airport,Villaland,Gambia,Europe/Dublin,13.268414,139.77292
+AP286,Christinaburgh Intl Airport,Christinaburgh,Guinea,Pacific/Kiritimati,-66.250366,89.825647
+AP287,West Vanessa Intl Airport,West Vanessa,New Zealand,Africa/Asmera,8.472511,169.418918
+AP288,Jasonhaven Intl Airport,Jasonhaven,Sao Tome and Principe,America/El_Salvador,10.796679,135.45089
+AP289,West Joseph Intl Airport,West Joseph,Syrian Arab Republic,Africa/Lagos,-3.996139,88.468152
+AP290,East Thomasland Intl Airport,East Thomasland,Grenada,Africa/Conakry,68.771316,-135.285281
+AP291,Port Michaelport Intl Airport,Port Michaelport,Reunion,Europe/Athens,84.656692,-171.241729
+AP292,East Jason Intl Airport,East Jason,Paraguay,America/Guyana,52.216949,135.392238
+AP293,Reneeport Intl Airport,Reneeport,Chad,America/Managua,-61.348275,-42.664703
+AP294,New Bryanview Intl Airport,New Bryanview,Romania,Asia/Beirut,-23.360867,146.948132
+AP295,Garciafurt Intl Airport,Garciafurt,French Southern Territories,Asia/Muscat,-3.455074,-131.219234
+AP296,Williamsview Intl Airport,Williamsview,Canada,Asia/Singapore,61.858478,1.43242
+AP297,Port Samanthafort Intl Airport,Port Samanthafort,Zambia,Europe/Budapest,-7.28601,139.605192
+AP298,South Shawnchester Intl Airport,South Shawnchester,Antarctica (the territory South of 60 deg S),Africa/Asmera,-77.503371,-20.639735
+AP299,East Natalie Intl Airport,East Natalie,Lao People's Democratic Republic,Africa/Luanda,-39.630713,-24.9206
+AP300,Coreyfort Intl Airport,Coreyfort,Northern Mariana Islands,America/Guatemala,-48.14329,170.180682
