@@ -9,6 +9,6 @@ Built a suite of Snowflake-compatible User Defined Functions (UDFs) in Python to
 Developed a Python-based automation framework to dynamically create and manage Snowflake views across schemas and environments, reducing manual SQL repetition.  
 🔗 [Read more about this project](Automated-Snowflake-View-Creation)
 
-##Project 3: Airlines Data Engineering Project
+## Project 3: Airlines Data Engineering Project
 This project simulates a comprehensive airline booking system dataset and builds a scalable data pipeline for ingestion, storage, and analysis using Databricks Delta Lake.
-
+🔗 [Read more about this project](Airlines-Data-Engineering-Project)
