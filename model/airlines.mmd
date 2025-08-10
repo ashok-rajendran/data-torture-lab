@@ -1,0 +1,84 @@
+erDiagram
+    AIRPORTS {
+        STRING airport_code
+        STRING airport_name
+        STRING city
+        STRING country
+        STRING timezone
+        DOUBLE latitude
+        DOUBLE longitude
+    }
+
+    BOOKINGS {
+        STRING booking_id
+        STRING flight_id
+        STRING passenger_id
+        STRING group_id
+        TIMESTAMP booking_date
+        TIMESTAMP departure_time_utc
+        TIMESTAMP arrival_time_utc
+        STRING seat_class
+        DOUBLE ticket_price_usd
+        STRING payment_method
+        INT miles_redeemed
+        INT checked_bags
+        DOUBLE baggage_fee_usd
+        STRING meal_pref
+        STRING departure_weather
+        STRING arrival_weather
+        STRING flight_status
+        INT delay_minutes
+        STRING delay_cause
+        STRING show_status
+        STRING check_in_status
+        BOOLEAN upgraded_at_checkin
+        STRING seat_number
+        DOUBLE late_checkin_fee_usd
+        STRING cancel_reason
+    }
+
+    FLIGHT_STATUS_HISTORY {
+        STRING event_id
+        STRING flight_id
+        TIMESTAMP event_time_utc
+        STRING status
+        STRING note
+    }
+
+    FLIGHTS {
+        STRING flight_id
+        STRING airline
+        STRING flight_number
+        STRING origin_airport
+        STRING destination_airport
+        TIMESTAMP departure_time_utc
+        TIMESTAMP arrival_time_utc
+        STRING aircraft_type
+        INT distance_km
+        INT stops
+        STRING layover_airports
+        STRING flight_type
+        STRING status
+        INT delay_minutes
+        STRING delay_cause
+        INT scheduled_duration_min
+    }
+
+    PASSENGERS {
+        STRING passenger_id
+        STRING first_name
+        STRING last_name
+        STRING gender
+        DATE dob
+        STRING nationality
+        STRING frequent_flyer_status
+        INT ff_points
+        INT typical_flight_freq_per_year
+    }
+
+    %% Relationships
+    AIRPORTS ||--o{ FLIGHTS : "origin_airport → airport_code"
+    AIRPORTS ||--o{ FLIGHTS : "destination_airport → airport_code"
+    FLIGHTS ||--o{ BOOKINGS : "flight_id"
+    PASSENGERS ||--o{ BOOKINGS : "passenger_id"
+    FLIGHTS ||--o{ FLIGHT_STATUS_HISTORY : "flight_id"
