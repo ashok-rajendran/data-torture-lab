@@ -11,4 +11,4 @@ Developed a Python-based automation framework to dynamically create and manage S
 
 ## Project 3: Airlines Data Engineering Project
 This project simulates a comprehensive airline booking system dataset and builds a scalable data pipeline for ingestion, storage, and analysis using Databricks Delta Lake.  
-[Read more about this project](https://github.com/ashok-rajendran/data-torture-lab/wiki/Airlines-Data-Engineering-Project)
+🔗 [Read more about this project](https://github.com/ashok-rajendran/data-torture-lab/wiki/Airlines-Data-Engineering-Project)
