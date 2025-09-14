@@ -1,0 +1,40 @@
+name: Sync README to Wiki
+
+on:
+  push:
+    paths:
+      - "README.md"   # Run only when README.md changes
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Clone wiki repo
+        run: |
+          git clone "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git" wiki
+
+      - name: Copy README.md to Wiki
+        run: |
+          cp README.md wiki/README.md
+
+      - name: Commit & Push to Wiki
+        run: |
+          cd wiki
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Sync README.md from main repo"
+            git push
+          fi
