@@ -26,12 +26,12 @@ jobs:
 
       - name: Copy README.md to Wiki
         run: |
-          cp README.md wiki/README.md
+          cp README.md wiki/Home.md
 
       - name: Commit & Push to Wiki
         run: |
           cd wiki
-          git add README.md
+          git add Home.md
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
