@@ -14,3 +14,9 @@ class AirpodsAfterIphoneLoader(AbstractLoader):
         self.transformedDf.write.format("delta").mode("overwrite").saveAsTable(
             "default.airpods_after_iphone"
         )
+
+class OnlyAirpodsAndIphoneLoader(AbstractLoader):
+    def sink(self):
+        self.transformedDf.write.format("delta").mode("overwrite").saveAsTable(
+            "default.only_airpods_and_iphone"
+        )
