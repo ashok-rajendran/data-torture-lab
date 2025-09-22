@@ -1,11 +1,15 @@
 # Databricks notebook source
+# MAGIC %run "./reader_factory"
+
+# COMMAND ----------
+
 class Extractor:
     def __init__(self):
         pass
     def extract(self):
         pass
 
-class AirpodsAfterIphoneExtractor(Extractor):
+class SourceDataExtractor(Extractor):
     def extract(self):
         transactionInputDf = get_data_source(
                 file_type = "csv",
