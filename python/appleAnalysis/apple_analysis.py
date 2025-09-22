@@ -22,17 +22,3 @@ class WorkFlow:
 
 workFlow = WorkFlow().runner()
 
-
-# COMMAND ----------
-
-from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName("AppleAnalysis").getOrCreate()
-
-input_df = spark.read.format("csv").option("header", True).load("/Volumes/workspace/bronze/appleanalysis/Transaction_Updated.csv")
-
-input_df.show()
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC select * from default.airpods_after_iphone
