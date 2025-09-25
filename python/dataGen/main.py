@@ -46,8 +46,15 @@ def parse_args():
     parser.add_argument("--hf-repo", type=str, default="ashok-rajendran/data-torture-lab", help="Hugging Face repository to push the dataset")
     parser.add_argument("--start-date", type=str, default="2025-01-01", help="Start date for data generation (YYYY-MM-DD)")
     parser.add_argument("--end-date", type=str, default="2025-12-31", help="End date for data generation (YYYY-MM-DD)")
+    # ----------------- NEW: Output folder for timestamped runs -----------------
+    parser.add_argument(
+        "--output-folder",
+        type=str,
+        default=None,
+        help="Optional output folder (GitHub Actions timestamped folder)"
+    )
     return parser.parse_args()
-
+    
 
 if __name__ == "__main__":
     args = parse_args()
