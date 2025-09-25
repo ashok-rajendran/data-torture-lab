@@ -10,7 +10,7 @@ class AirlinesGenerator(SharedUtility):
     """
 
     def __init__(self, hf_repo: str, start_date: datetime, end_date: datetime, output_folder: str = None):
-        super().__init__(domain="Airline", hf_repo=hf_repo, output_folder=output_folder)
+        super().__init__(domain="Airline", hf_repo=hf_repo, output_root=output_folder)
         self.start_date = start_date
         self.end_date = end_date
         self.faker = Faker()

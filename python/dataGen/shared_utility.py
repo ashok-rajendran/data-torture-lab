@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime
 import pandas as pd
 from faker import Faker
-from huggingface_hub import Repository
+from huggingface_hub import upload_folder
 import random
 import string
 
@@ -13,14 +13,13 @@ class SharedUtility:
     Provides CSV save, Hugging Face push, ID generation, Faker, and common helpers.
     """
 
-    def __init__(self, domain: str, hf_repo: str, output_folder="./output"):
+    def __init__(self, domain: str, hf_repo: str, output_root="./output"):
         self.domain = domain
         self.hf_repo = hf_repo
-        self.output_root = Path(output_folder) / domain
+        self.output_root = Path(output_root) / domain
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]  # millisecond
         self.faker = Faker()
         self.ensure_dir(self.output_root)
-
 
     def ensure_dir(self, path: Path):
         path.mkdir(parents=True, exist_ok=True)
@@ -37,15 +36,25 @@ class SharedUtility:
 
     # ----------------- Hugging Face Push -----------------
     def push_to_hf(self):
+        """
+        Upload the entire output folder to Hugging Face dataset repo.
+        """
         hf_token = os.environ.get("HF_TOKEN")
         if not hf_token:
             raise RuntimeError("HF_TOKEN not found in environment variables!")
-        
-        repo = Repository(local_dir=str(self.output_root), clone_from=self.hf_repo, use_auth_token=hf_token)
-        repo.git_add(auto_lfs_track=True)
-        repo.git_commit(f"New dataset run {self.timestamp}")
-        repo.push_to_hub(commit_message=f"New dataset run {self.timestamp}")
-        print("✅ Uploaded dataset to Hugging Face")
+
+        print(f"📤 Uploading {self.output_root} to Hugging Face repo {self.hf_repo}...")
+
+        upload_folder(
+            folder_path=str(self.output_root),
+            repo_id=self.hf_repo,
+            token=hf_token,
+            repo_type="dataset",
+            path_in_repo=self.output_root.name,  # store in a subfolder with domain name
+            ignore_patterns=["*.pyc", "__pycache__"]
+        )
+
+        print("✅ Uploaded dataset to Hugging Face successfully!")
 
     # ----------------- ID Generation -----------------
     def generate_id(self, prefix: str = "", length: int = 6) -> str:
