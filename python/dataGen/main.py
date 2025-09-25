@@ -35,7 +35,8 @@ class DataGenRunner:
             generator = AirlinesGenerator(
                 hf_repo=self.hf_repo,
                 start_date=self.start_date,
-                end_date=self.end_date
+                end_date=self.end_date,
+                output_folder=self.output_folder
             )
             generator.run_all()
         else:
@@ -44,19 +45,18 @@ class DataGenRunner:
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate domain-specific datasets and push to Hugging Face")
-    parser.add_argument("--domain", type=str, default="Airline", choices=["Airline"], help="Domain to generate dataset for")
-    parser.add_argument("--hf-repo", type=str, default="ashok-rajendran/data-torture-lab", help="Hugging Face repository to push the dataset")
-    parser.add_argument("--start-date", type=str, default="2025-01-01", help="Start date for data generation (YYYY-MM-DD)")
-    parser.add_argument("--end-date", type=str, default="2025-12-31", help="End date for data generation (YYYY-MM-DD)")
-    # ----------------- NEW: Output folder for timestamped runs -----------------
+    parser.add_argument("--domain", type=str, required=True, choices=["Airline"], help="Domain to generate dataset for")
+    parser.add_argument("--hf-repo", type=str, required=True, help="Hugging Face repository to push the dataset")
+    parser.add_argument("--start-date", type=str, required=True, help="Start date for data generation (YYYY-MM-DD)")
+    parser.add_argument("--end-date", type=str, required=True, help="End date for data generation (YYYY-MM-DD)")
     parser.add_argument(
         "--output-folder",
         type=str,
         default=None,
-        help="Optional output folder (GitHub Actions timestamped folder)"
+        help="Optional output folder (timestamped folder from GitHub Actions)"
     )
     return parser.parse_args()
-    
+
 
 if __name__ == "__main__":
     args = parse_args()

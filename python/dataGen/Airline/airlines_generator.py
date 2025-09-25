@@ -2,18 +2,20 @@ import pandas as pd
 from datetime import datetime, timedelta
 from shared_utility import SharedUtility
 import random
+from faker import Faker
 
 class AirlinesGenerator(SharedUtility):
     """
     Generates realistic airline datasets with relational consistency.
     """
 
-    def __init__(self, hf_repo: str, start_date: datetime, end_date: datetime):
-        super().__init__(domain="Airline", hf_repo=hf_repo)
+    def __init__(self, hf_repo: str, start_date: datetime, end_date: datetime, output_folder: str = None):
+        super().__init__(domain="Airline", hf_repo=hf_repo, output_folder=output_folder)
         self.start_date = start_date
         self.end_date = end_date
+        self.faker = Faker()
 
-        # Lists to keep IDs in sync
+        # ID tracking for relational consistency
         self.airport_ids = []
         self.route_ids = []
         self.flight_ids = []
@@ -24,14 +26,10 @@ class AirlinesGenerator(SharedUtility):
         self.transaction_ids = []
         self.employee_ids = []
 
-        # Airlines
-        self.airlines = [
-            "Delta", "American", "United", "Lufthansa", "Emirates",
-            "Air France", "Singapore", "Qatar", "British Airways", "ANA",
-            "Cathay Pacific", "Turkish", "KLM", "Swiss", "Etihad"
-        ]
+        # Airlines & Sample airports
+        self.airlines = ["Delta","American","United","Lufthansa","Emirates","Air France","Singapore","Qatar",
+                         "British Airways","ANA","Cathay Pacific","Turkish","KLM","Swiss","Etihad"]
 
-        # Sample airports (IATA, city, country)
         self.sample_airports = [
             ("JFK", "New York", "USA"), ("LAX", "Los Angeles", "USA"),
             ("ORD", "Chicago", "USA"), ("CDG", "Paris", "France"),
@@ -43,7 +41,28 @@ class AirlinesGenerator(SharedUtility):
             ("AUH", "Abu Dhabi", "UAE")
         ]
 
-    # ----------------- Airports -----------------
+    # ----------------- Utility Methods -----------------
+    def generate_id(self, prefix: str):
+        return f"{prefix}{random.randint(100000, 999999)}"
+
+    def pick_random(self, lst):
+        return random.choice(lst)
+
+    def random_datetime(self, start: datetime, end: datetime):
+        delta = end - start
+        seconds = random.randint(0, int(delta.total_seconds()))
+        return start + timedelta(seconds=seconds)
+
+    def random_status(self, type_: str):
+        if type_ == "flight":
+            return random.choices(["Scheduled", "Delayed", "Cancelled"], weights=[0.7,0.2,0.1])[0]
+        elif type_ == "booking":
+            return random.choices(["Confirmed", "Cancelled", "No-show"], weights=[0.8,0.15,0.05])[0]
+        elif type_ == "transaction":
+            return random.choices(["Success","Failed"], weights=[0.9,0.1])[0]
+        return "Unknown"
+
+    # ----------------- Dataset Generators -----------------
     def generate_airports(self):
         data = []
         for code, city, country in self.sample_airports:
@@ -57,7 +76,6 @@ class AirlinesGenerator(SharedUtility):
             })
         return self.save_df(pd.DataFrame(data), "airports")
 
-    # ----------------- Routes -----------------
     def generate_routes(self):
         data = []
         route_counter = 1
@@ -66,8 +84,8 @@ class AirlinesGenerator(SharedUtility):
                 if i != j:
                     route_id = f"RT-{route_counter:04d}"
                     self.route_ids.append(route_id)
-                    distance = random.randint(300, 12000)  # in km
-                    flight_time = round(distance / 800, 2)  # approximate hours
+                    distance = random.randint(300, 12000)
+                    flight_time = round(distance / 800, 2)
                     data.append({
                         "route_id": route_id,
                         "source_airport": self.airport_ids[i],
@@ -78,7 +96,6 @@ class AirlinesGenerator(SharedUtility):
                     route_counter += 1
         return self.save_df(pd.DataFrame(data), "routes")
 
-    # ----------------- Flights -----------------
     def generate_flights(self, num_flights=2000):
         data = []
         for _ in range(num_flights):
@@ -87,19 +104,17 @@ class AirlinesGenerator(SharedUtility):
             airline = random.choice(self.airlines)
             route_id = self.pick_random(self.route_ids)
             dep_time = self.random_datetime(self.start_date, self.end_date)
-            flight_status = self.random_status("flight")
             data.append({
                 "flight_id": flight_id,
                 "flight_number": f"{airline[:2].upper()}{random.randint(100,9999)}",
                 "airline": airline,
                 "route_id": route_id,
                 "departure_time": dep_time,
-                "arrival_time": dep_time + timedelta(hours=random.randint(1, 15)),
-                "status": flight_status
+                "arrival_time": dep_time + timedelta(hours=random.randint(1,15)),
+                "status": self.random_status("flight")
             })
         return self.save_df(pd.DataFrame(data), "flights")
 
-    # ----------------- Customers -----------------
     def generate_customers(self, num_customers=7000):
         data = []
         for _ in range(num_customers):
@@ -113,25 +128,23 @@ class AirlinesGenerator(SharedUtility):
             })
         return self.save_df(pd.DataFrame(data), "customers")
 
-    # ----------------- Membership -----------------
     def generate_membership(self):
         data = []
         tiers = ["Silver", "Gold", "Platinum"]
         for customer_id in self.customer_ids:
-            if random.random() < 0.5:  # ~50% have membership
+            if random.random() < 0.5:
                 membership_id = self.generate_id("MB-")
                 self.membership_ids.append(membership_id)
                 data.append({
                     "membership_id": membership_id,
                     "customer_id": customer_id,
                     "tier": random.choice(tiers),
-                    "points": random.randint(0, 50000)
+                    "points": random.randint(0,50000)
                 })
         return self.save_df(pd.DataFrame(data), "membership")
 
-    # ----------------- Employees -----------------
     def generate_employees(self, num_employees=300):
-        roles = ["Pilot", "Crew", "Ground Staff"]
+        roles = ["Pilot","Crew","Ground Staff"]
         data = []
         for _ in range(num_employees):
             emp_id = self.generate_id("EMP-")
@@ -145,7 +158,6 @@ class AirlinesGenerator(SharedUtility):
             })
         return self.save_df(pd.DataFrame(data), "employees")
 
-    # ----------------- Bookings -----------------
     def generate_bookings(self, num_bookings=10000):
         data = []
         for _ in range(num_bookings):
@@ -164,67 +176,13 @@ class AirlinesGenerator(SharedUtility):
             })
         return self.save_df(pd.DataFrame(data), "bookings")
 
-    # ----------------- Passengers -----------------
-    def generate_passengers(self):
-        data = []
-        for booking_id in self.booking_ids:
-            num_passengers = random.randint(1, 4)
-            for _ in range(num_passengers):
-                passenger_id = self.generate_id("PS-")
-                self.passenger_ids.append(passenger_id)
-                data.append({
-                    "passenger_id": passenger_id,
-                    "booking_id": booking_id,
-                    "name": self.faker.name(),
-                    "passport_number": f"P{random.randint(1000000,9999999)}"
-                })
-        return self.save_df(pd.DataFrame(data), "passengers")
-
-    # ----------------- Transactions -----------------
-    def generate_transactions(self):
-        data = []
-        for booking_id in self.booking_ids:
-            transaction_id = self.generate_id("TX-")
-            self.transaction_ids.append(transaction_id)
-            amount = random.randint(50, 2000)
-            status = self.random_status("transaction")
-            data.append({
-                "transaction_id": transaction_id,
-                "booking_id": booking_id,
-                "amount": amount,
-                "status": status
-            })
-        return self.save_df(pd.DataFrame(data), "transactions")
-
-    # ----------------- Run all -----------------
+    # ----------------- Run All -----------------
     def run_all(self):
-        print("Generating Airports...")
         self.generate_airports()
-        
-        print("Generating Routes...")
         self.generate_routes()
-        
-        print("Generating Flights...")
         self.generate_flights()
-        
-        print("Generating Customers...")
         self.generate_customers()
-        
-        print("Generating Memberships...")
         self.generate_membership()
-        
-        print("Generating Employees...")
         self.generate_employees()
-        
-        print("Generating Bookings...")
         self.generate_bookings()
-        
-        print("Generating Passengers...")
-        self.generate_passengers()
-        
-        print("Generating Transactions...")
-        self.generate_transactions()
-        
-        print("All tables generated. Pushing to Hugging Face...")
         self.push_to_hf()
-        print("Done!")

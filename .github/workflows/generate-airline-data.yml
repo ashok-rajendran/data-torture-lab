@@ -1,29 +1,35 @@
 name: Generate Airline Data
 
 on:
-  workflow_dispatch:   # Manual trigger
+  workflow_dispatch:   # Allows manual trigger
   schedule:
-    - cron: '0 0 * * *'  # Optional daily run at midnight
+    - cron: '0 0 * * *'  # Optional: daily run at midnight UTC
 
 jobs:
   generate-data:
     runs-on: ubuntu-latest
+
     steps:
+      # 1️ Checkout the repository
       - uses: actions/checkout@v3
 
+      # 2️ Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
+      # 3️ Install Python dependencies
       - name: Install dependencies
         run: |
           pip install pandas faker huggingface-hub
 
+      # 4️ Set timestamp for unique output folder
       - name: Set timestamp
         id: timestamp
         run: echo "TIMESTAMP=$(date +%Y%m%d%H%M%S%3N)" >> $GITHUB_ENV
 
+      # 5️ Run the Airlines data generator
       - name: Run Airlines data generator
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -33,4 +39,8 @@ jobs:
             --hf-repo ashok-rajendran/data-torture-lab \
             --start-date 2025-01-01 \
             --end-date 2025-12-31 \
-            --output-folder output/Airline/${TIMESTAMP}
+            --output-folder Airline/${TIMESTAMP}
+
+      # 6 Optional: List generated files
+      - name: List generated files
+        run: ls -R Airline/${{ env.TIMESTAMP }}
