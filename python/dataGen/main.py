@@ -62,6 +62,7 @@ if __name__ == "__main__":
         domain=args.domain,
         hf_repo=args.hf_repo,
         start_date=args.start_date,
-        end_date=args.end_date
+        end_date=args.end_date,
+        output_folder=args.output_folder
     )
     runner.run()
