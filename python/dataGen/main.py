@@ -7,12 +7,14 @@ class DataGenRunner:
     Orchestrates dataset generation for a specific domain and pushes to Hugging Face
     """
 
-    def __init__(self, domain: str, hf_repo: str, start_date: str, end_date: str):
+    def __init__(self, domain: str, hf_repo: str, start_date: str, end_date: str, output_folder: str = None):
         self.domain = domain.lower()
         self.hf_repo = hf_repo
         self.start_date = self.parse_date(start_date)
         self.end_date = self.parse_date(end_date)
+        self.output_folder = output_folder
         self.validate_dates()
+
 
     @staticmethod
     def parse_date(date_str: str) -> datetime:
