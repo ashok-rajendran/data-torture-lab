@@ -31,4 +31,8 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python python/dataGen/main.py
+          python python/dataGen/main.py \
+            --domain Airline \
+            --hf-repo ashok-rajendran/data-torture-lab \
+            --start-date 2025-01-01 \
+            --end-date 2025-12-31
