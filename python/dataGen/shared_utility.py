@@ -13,13 +13,14 @@ class SharedUtility:
     Provides CSV save, Hugging Face push, ID generation, Faker, and common helpers.
     """
 
-    def __init__(self, domain: str, hf_repo: str, output_root="./output"):
+    def __init__(self, domain: str, hf_repo: str, output_folder="./output"):
         self.domain = domain
         self.hf_repo = hf_repo
-        self.output_root = Path(output_root) / domain
+        self.output_root = Path(output_folder) / domain
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]  # millisecond
         self.faker = Faker()
         self.ensure_dir(self.output_root)
+
 
     def ensure_dir(self, path: Path):
         path.mkdir(parents=True, exist_ok=True)
