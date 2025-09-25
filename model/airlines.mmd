@@ -1,83 +1,78 @@
 erDiagram
-    %% ---------- Tables ----------
+    %% Tables
     AIRPORTS {
-        VARCHAR airport_id PK "Unique airport ID (AP-JFK)"
-        VARCHAR iata_code "IATA code"
-        VARCHAR city "City name"
-        VARCHAR country "Country"
+        VARCHAR airport_id PK
+        VARCHAR iata_code
+        VARCHAR city
+        VARCHAR country
     }
 
     ROUTES {
-        VARCHAR route_id PK "Unique route ID"
-        VARCHAR source_airport FK "FK -> AIRPORTS.airport_id"
-        VARCHAR destination_airport FK "FK -> AIRPORTS.airport_id"
-        INT distance_km "Distance in km"
-        FLOAT flight_time_hr "Approx flight time in hours"
+        VARCHAR route_id PK
+        VARCHAR source_airport FK
+        VARCHAR destination_airport FK
+        INT distance_km
+        FLOAT flight_time_hr
     }
 
     FLIGHTS {
-        VARCHAR flight_id PK "Unique flight ID"
-        VARCHAR flight_number "Flight number"
-        VARCHAR airline "Airline name"
-        VARCHAR route_id FK "FK -> ROUTES.route_id"
-        DATETIME departure_time "Scheduled departure"
-        DATETIME arrival_time "Scheduled arrival"
-        VARCHAR status "Flight status (on-time/delayed/cancelled)"
+        VARCHAR flight_id PK
+        VARCHAR flight_number
+        VARCHAR airline
+        VARCHAR route_id FK
+        DATETIME departure_time
+        DATETIME arrival_time
+        VARCHAR status
     }
 
     CUSTOMERS {
-        VARCHAR customer_id PK "Unique customer ID"
-        VARCHAR name "Customer full name"
-        VARCHAR nationality "Customer nationality"
-        VARCHAR email "Contact email"
+        VARCHAR customer_id PK
+        VARCHAR name
+        VARCHAR nationality
+        VARCHAR email
     }
 
     MEMBERSHIP {
-        VARCHAR membership_id PK "Unique membership ID"
-        VARCHAR customer_id FK "FK -> CUSTOMERS.customer_id"
-        VARCHAR tier "Silver/Gold/Platinum"
-        INT points "Loyalty points"
+        VARCHAR membership_id PK
+        VARCHAR customer_id FK
+        VARCHAR tier
+        INT points
     }
 
     EMPLOYEES {
-        VARCHAR employee_id PK "Unique employee ID"
-        VARCHAR name "Employee name"
-        VARCHAR role "Pilot/Crew/Ground Staff"
-        VARCHAR airline "Airline worked for"
-        VARCHAR country "Country of employment"
+        VARCHAR employee_id PK
+        VARCHAR name
+        VARCHAR role
+        VARCHAR airline
+        VARCHAR country
     }
 
     BOOKINGS {
-        VARCHAR booking_id PK "Unique booking ID"
-        VARCHAR customer_id FK "FK -> CUSTOMERS.customer_id"
-        VARCHAR flight_id FK "FK -> FLIGHTS.flight_id"
-        DATETIME booking_time "Booking timestamp"
-        VARCHAR status "Booking status (confirmed/cancelled/no-show/rescheduled)"
+        VARCHAR booking_id PK
+        VARCHAR customer_id FK
+        VARCHAR flight_id FK
+        DATETIME booking_time
+        VARCHAR status
     }
 
     TRANSACTIONS {
-        VARCHAR transaction_id PK "Unique transaction ID"
-        VARCHAR booking_id FK "FK -> BOOKINGS.booking_id"
-        FLOAT amount "Payment amount"
-        VARCHAR payment_method "Payment method"
-        VARCHAR status "Transaction status (completed/failed/refunded)"
-        DATETIME transaction_time "Transaction timestamp"
+        VARCHAR transaction_id PK
+        VARCHAR booking_id FK
+        FLOAT amount
+        VARCHAR payment_method
+        VARCHAR status
+        DATETIME transaction_time
     }
 
-    %% ---------- Relationships with cardinality ----------
-    ROUTES.source_airport --> AIRPORTS.airport_id : "N:1"
-    ROUTES.destination_airport --> AIRPORTS.airport_id : "N:1"
+    %% Relationships
+    ROUTES.source_airport --> AIRPORTS.airport_id
+    ROUTES.destination_airport --> AIRPORTS.airport_id
 
-    FLIGHTS.route_id --> ROUTES.route_id : "N:1"
+    FLIGHTS.route_id --> ROUTES.route_id
 
-    BOOKINGS.customer_id --> CUSTOMERS.customer_id : "N:1"
-    BOOKINGS.flight_id --> FLIGHTS.flight_id : "N:1"
+    BOOKINGS.customer_id --> CUSTOMERS.customer_id
+    BOOKINGS.flight_id --> FLIGHTS.flight_id
 
-    MEMBERSHIP.customer_id --> CUSTOMERS.customer_id : "0..1:1"
+    MEMBERSHIP.customer_id --> CUSTOMERS.customer_id
 
-    TRANSACTIONS.booking_id --> BOOKINGS.booking_id : "1:1"
-
-    %% ---------- Notes ----------
-    %% 1 Customer can have multiple bookings (1:N)
-    %% One booking has exactly one transaction (1:1)
-    %% One flight has multiple bookings (1:N)
+    TRANSACTIONS.booking_id --> BOOKINGS.booking_id
