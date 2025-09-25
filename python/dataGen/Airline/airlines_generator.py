@@ -154,4 +154,77 @@ class AirlinesGenerator(SharedUtility):
             customer_id = self.pick_random(self.customer_ids)
             flight_id = self.pick_random(self.flight_ids)
             booking_datetime = self.random_datetime(self.start_date, self.end_date)
-            booking_status = self.random_status
+            booking_status = self.random_status("booking")
+            data.append({
+                "booking_id": booking_id,
+                "customer_id": customer_id,
+                "flight_id": flight_id,
+                "booking_datetime": booking_datetime,
+                "status": booking_status
+            })
+        return self.save_df(pd.DataFrame(data), "bookings")
+
+    # ----------------- Passengers -----------------
+    def generate_passengers(self):
+        data = []
+        for booking_id in self.booking_ids:
+            num_passengers = random.randint(1, 4)
+            for _ in range(num_passengers):
+                passenger_id = self.generate_id("PS-")
+                self.passenger_ids.append(passenger_id)
+                data.append({
+                    "passenger_id": passenger_id,
+                    "booking_id": booking_id,
+                    "name": self.faker.name(),
+                    "passport_number": f"P{random.randint(1000000,9999999)}"
+                })
+        return self.save_df(pd.DataFrame(data), "passengers")
+
+    # ----------------- Transactions -----------------
+    def generate_transactions(self):
+        data = []
+        for booking_id in self.booking_ids:
+            transaction_id = self.generate_id("TX-")
+            self.transaction_ids.append(transaction_id)
+            amount = random.randint(50, 2000)
+            status = self.random_status("transaction")
+            data.append({
+                "transaction_id": transaction_id,
+                "booking_id": booking_id,
+                "amount": amount,
+                "status": status
+            })
+        return self.save_df(pd.DataFrame(data), "transactions")
+
+    # ----------------- Run all -----------------
+    def run_all(self):
+        print("Generating Airports...")
+        self.generate_airports()
+        
+        print("Generating Routes...")
+        self.generate_routes()
+        
+        print("Generating Flights...")
+        self.generate_flights()
+        
+        print("Generating Customers...")
+        self.generate_customers()
+        
+        print("Generating Memberships...")
+        self.generate_membership()
+        
+        print("Generating Employees...")
+        self.generate_employees()
+        
+        print("Generating Bookings...")
+        self.generate_bookings()
+        
+        print("Generating Passengers...")
+        self.generate_passengers()
+        
+        print("Generating Transactions...")
+        self.generate_transactions()
+        
+        print("All tables generated. Pushing to Hugging Face...")
+        self.push_to_hf()
+        print("Done!")
