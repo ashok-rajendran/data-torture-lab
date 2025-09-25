@@ -1,5 +1,4 @@
 erDiagram
-    %% Tables
     AIRPORTS {
         VARCHAR airport_id PK
         VARCHAR iata_code
@@ -64,15 +63,11 @@ erDiagram
         DATETIME transaction_time
     }
 
-    %% Relationships
-    ROUTES.source_airport --> AIRPORTS.airport_id
-    ROUTES.destination_airport --> AIRPORTS.airport_id
-
-    FLIGHTS.route_id --> ROUTES.route_id
-
-    BOOKINGS.customer_id --> CUSTOMERS.customer_id
-    BOOKINGS.flight_id --> FLIGHTS.flight_id
-
-    MEMBERSHIP.customer_id --> CUSTOMERS.customer_id
-
-    TRANSACTIONS.booking_id --> BOOKINGS.booking_id
+    %% Relationships with cardinality
+    AIRPORTS ||--o{ ROUTES : "source_airport"
+    AIRPORTS ||--o{ ROUTES : "destination_airport"
+    ROUTES ||--o{ FLIGHTS : "route_id"
+    FLIGHTS ||--o{ BOOKINGS : "flight_id"
+    CUSTOMERS ||--o{ BOOKINGS : "customer_id"
+    CUSTOMERS ||--o{ MEMBERSHIP : "customer_id"
+    BOOKINGS ||--|| TRANSACTIONS : "booking_id"
