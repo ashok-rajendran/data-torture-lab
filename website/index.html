@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok - Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <a href="#" class="avatar" onclick="location.reload(); return false;">A</a>
+                <div class="title-section">
+                    <h1 class="name">Ashok Rajendran</h1>
+                    <p class="title">Data Engineer with <span id="years-experience">8</span> Years Experience</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section section">
+            <div class="hero-content">
+                <h2 class="hero-title">Building Data Solutions</h2>
+                <p class="hero-subtitle">Transforming raw data into meaningful insights</p>
+                <p class="hero-description">Experienced Data Engineer specializing in building scalable data pipelines, implementing ETL processes, and developing robust data architectures. Passionate about turning complex data challenges into efficient solutions.</p>
+            </div>
+        </section>
+
+        <!-- Current Position -->
+        <section id="experience" class="section">
+            <h2>Current Role</h2>
+            <div class="card highlight-card">
+                <div class="card-header">
+                    <i class="fas fa-building"></i>
+                    <h3>Bestbuy India <span class="company-date">Apr 2025 - Present</span></h3>
+                </div>
+                <p class="role-title">Software Engineer - II (Data)</p>
+                <p class="role-description">Primarily focused on analyzing SAP reports and tracing data lineage from the reporting layer back through the medallion architecture—gold, silver, bronze layers—to the source RDBMS. The existing architecture is built on Teradata with ETL via Informatica. This analysis is used to reconstruct the data flow in Google Cloud using BigQuery and to build new reports in Looker Studio Pro.</p>
+                <div class="achievements">
+                    <h4>Major Contributions:</h4>
+                    <ul>
+                        <li>Conducted in-depth lineage analysis of SAP reports across Teradata-based medallion architecture</li>
+                        <li>Mapped data flow from gold layer to source systems to support migration to Google Cloud</li>
+                        <li>Rebuilt data pipelines and models in BigQuery based on legacy architecture insights</li>
+                        <li>Designed and developed reports in Looker Studio Pro for enhanced visualization and accessibility</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">GCP</span>
+                    <span class="tech-tag">Teradata</span>
+                    <span class="tech-tag">Looker Studio Pro</span>
+                    <span class="tech-tag">Medallion Architecture</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Previous Experience -->
+        <section class="section">
+            <h2>Previous Experience</h2>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-building"></i>
+                    <h3>Carelon Global Solutions <span class="company-date">Dec 2022 - Mar 2025</span></h3>
+                </div>
+                <p class="role-title">Senior Software Engineer - Data Engineering</p>
+                <p class="role-description">Focused on developing scalable data models and pipelines using Python and SQL across AWS and GCP environments to process high-volume healthcare claims data, while ensuring compliance with privacy and security standards.</p>
+                <div class="achievements">
+                    <ul>
+                        <li>Built ETL pipelines using Python and SQL on GCP (Cloud Functions & GKE) to monitor and process $250M in finalized claims daily (MBM Commercial model), orchestrated with Apache Airflow</li>
+                        <li>Developed and maintained cloud-based workflows using AWS Lambda, Glue, EMR, Step Functions, and GCP services</li>
+                        <li>Designed data models and contributed to architecture reviews with a focus on PHI/PII risk mitigation</li>
+                        <li>Presented technical designs to clients, demonstrating strong communication and domain knowledge</li>
+                        <li>Specialized in query optimization, code reviews, and lifecycle management to enhance data quality and security</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">GCP</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Airflow</span>
+                    <span class="tech-tag">Snowflake</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-building"></i>
+                    <h3>Legato Health Technologies <span class="company-date">Jan 2021 - Nov 2022</span></h3>
+                </div>
+                <p class="role-title">Software Engineer - Data Engineering</p>
+                <p class="role-description">Contributed to enterprise-scale data pipeline development and deployment across cloud and big data platforms, with a focus on automation, data quality, and team mentorship.</p>
+                <div class="achievements">
+                    <ul>
+                        <li>Developed an HBase audit tool to detect missing loads between Hadoop and Snowflake for 1000+ tables</li>
+                        <li>Built an AWS Glue job for incremental and bulk data transfers between S3 buckets, used daily for 1000+ tables</li>
+                        <li>Led complex production deployments with strong quality control using Bitbucket and deployment trackers</li>
+                        <li>Designed and optimized complex Snowflake SQL scripts for layered data warehousing</li>
+                        <li>Mentored new associates and conducted training on Big Data, Hadoop, Bitbucket, and AEDL architecture</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Snowflake</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">Hadoop</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-building"></i>
+                    <h3>Accenture Inc. <span class="company-date">Jun 2019 - Dec 2020</span></h3>
+                </div>
+                <p class="role-title">Software Engineer - Data Engineering</p>
+                <p class="role-description">Led performance optimization and framework enhancement efforts for big data ingestion tools, supporting cross-team collaboration and large-scale ETL operations in a Hadoop ecosystem.</p>
+                <div class="achievements">
+                    <ul>
+                        <li>Improved Hive partition deletion tool, reducing runtime from 30 minutes to under 1 minute per table; awarded "Best of the Month" at Accenture BDF</li>
+                        <li>Built a PySpark-based automation tool for converting Streamsets ETL pipelines to Spark jobs for 1800+ Hive tables</li>
+                        <li>Enhanced ingestion frameworks using Shell Script, PySpark, Sqoop, Hive, and HBase to support historical and incremental data loads</li>
+                        <li>Acted as the primary support for 8+ teams using the "Streamsets to Accelerator Converter" framework, ensuring reliable maintenance and issue resolution</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Spark</span>
+                    <span class="tech-tag">Hadoop</span>
+                    <span class="tech-tag">Shell Script</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Hive</span>
+                    <span class="tech-tag">Hbase</span>
+                    <span class="tech-tag">UNIX</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-building"></i>
+                    <h3>Accenture Inc. <span class="company-date">Jun 2018 - May 2019</span></h3>
+                </div>
+                <p class="role-title">Associate Software Engineer - Data Engineering</p>
+                <p class="role-description">Worked on large-scale data ingestion and automation projects using Hadoop ecosystem tools, with a focus on streamlining data workflows and ensuring data quality.</p>
+                <div class="achievements">
+                    <ul>
+                        <li>Automated deletion of invalid partitions across 1800+ tables using shell scripting</li>
+                        <li>Built 100+ Streamsets pipelines for efficient RDBMS to Hadoop data integration</li>
+                        <li>Developed automation frameworks using test-driven development in Agile Environment</li>
+                        <li>Gained deep expertise in Apache HBase and Hive data transformations</li>
+                        <li>Created an auditing framework for 1600+ pipelines, reducing manual validation time by two days</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Streamsets</span>
+                    <span class="tech-tag">ETL</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Hadoop</span>
+                    <span class="tech-tag">Hive</span>
+                    <span class="tech-tag">Hbase</span>
+                    <span class="tech-tag">Shell Scripting</span>
+                    <span class="tech-tag">UNIX</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-building"></i>
+                    <h3>Accenture Inc. <span class="company-date">Sept 2017 - Jun 2018</span></h3>
+                </div>
+                <p class="role-title">Associate Software Engineer - Data Engineering</p>
+                <p class="role-description">Completed comprehensive training in data engineering and business intelligence, focusing on data integration, processing, and visualization tools.</p>
+                <div class="achievements">
+                    <ul>
+                        <li>Trained in Hadoop ecosystem for big data processing</li>
+                        <li>Gained proficiency in SQL and ETL ingestion techniques</li>
+                        <li>Learned project management using Agile and Waterfall methodologies</li>
+                        <li>Developed workflows using Informatica</li>
+                        <li>Built interactive dashboards and reports in Power BI</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">ETL</span>
+                    <span class="tech-tag">Informatica</span>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">Hadoop</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid competencies-grid">
+                <!-- Cloud & Data Platform -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & Data Platform</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fab fa-aws"></i> AWS</li>
+                        <li><i class="fab fa-google"></i> GCP</li>
+                        <li><i class="fas fa-snowflake"></i> Snowflake</li>
+                    </ul>
+                </div>
+
+                <!-- Big Data Technologies -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Big Data Technologies</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-bolt"></i> Apache Spark</li>
+                        <li><i class="fas fa-table"></i> Apache Hive</li>
+                        <li><i class="fas fa-server"></i> Apache Hadoop</li>
+                        <li><i class="fas fa-database"></i> Apache HBase</li>
+                        <li><i class="fas fa-stream"></i> Apache Kafka</li>
+                        <li><i class="fas fa-random"></i> Apache Airflow</li>
+                        <li><i class="fas fa-project-diagram"></i> Apache Nifi</li>
+                    </ul>
+                </div>
+
+                <!-- Programming & Scripting -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Scripting</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fas fa-database"></i> SparkSQL</li>
+                        <li><i class="fas fa-terminal"></i> Shell Script</li>
+                    </ul>
+                </div>
+
+                <!-- Version Control & CI/CD -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Version Control & CI/CD</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fab fa-github"></i> GitHub</li>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fab fa-bitbucket"></i> Bitbucket</li>
+                        <li><i class="fas fa-seedling"></i> Bamboo</li>
+                        <li><i class="fas fa-code-branch"></i> Code Review</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fab fa-jira"></i> Jira</li>
+                        <li><i class="fab fa-confluence"></i> Confluence</li>
+                        <li><i class="fas fa-tasks"></i> Control-M</li>
+                        <li><i class="fas fa-database"></i> Oracle</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-database"></i> Teradata</li>
+                        <li><i class="fas fa-server"></i> Mainframe</li>
+                        <li><i class="fas fa-project-diagram"></i> Informatica</li>
+                    </ul>
+                </div>
+
+                <!-- Operating Systems & Best Practices -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>OS & Best Practices</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fab fa-linux"></i> Linux/Unix</li>
+                        <li><i class="fas fa-file-alt"></i> Documentation</li>
+                        <li><i class="fas fa-sync-alt"></i> CI/CD</li>
+                        <li><i class="fas fa-code-branch"></i> Code Reviews</li>
+                        <li><i class="fas fa-tasks"></i> Scrum</li>
+                        <li><i class="fas fa-project-diagram"></i> Agile</li>
+                        <li><i class="fas fa-vial"></i> TDD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Competencies Section -->
+        <section id="competencies" class="section">
+            <h2>Core Competencies</h2>
+            <div class="competencies-grid">
+                <!-- Data Engineering & Architecture -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Engineering & Architecture</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-project-diagram"></i> Data Modeling & Warehousing</li>
+                        <li><i class="fas fa-stream"></i> ETL/ELT Pipeline Development</li>
+                        <li><i class="fas fa-check-circle"></i> Data Quality & Governance</li>
+                        <li><i class="fas fa-lock"></i> Security & Compliance</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud & Pipeline Engineering -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & Pipeline Engineering</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-server"></i> Distributed Systems</li>
+                        <li><i class="fas fa-code-branch"></i> Pipeline Orchestration</li>
+                        <li><i class="fas fa-sync-alt"></i> CI/CD Automation</li>
+                        <li><i class="fas fa-expand"></i> Scalable Solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Data Operations & Management -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Data Operations & Management</h3>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-tasks"></i> Agile Methodologies</li>
+                        <li><i class="fas fa-chart-line"></i> Project Management</li>
+                        <li><i class="fas fa-book"></i> Technical Documentation</li>
+                        <li><i class="fas fa-graduation-cap"></i> Technical Training</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2>Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="card-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Lake Architecture</h3>
+                    </div>
+                    <p class="project-description">Designed and implemented a modern data lake architecture using AWS services. Built an end-to-end solution for data ingestion, processing, and analytics with automated governance and security controls.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS S3</span>
+                        <span class="tech-tag">AWS Glue</span>
+                        <span class="tech-tag">Athena</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Terraform</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-book"></i> Documentation</a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <i class="fas fa-stream"></i>
+                        <h3>Real-time Analytics Platform</h3>
+                    </div>
+                    <p class="project-description">Built a real-time analytics platform processing millions of events per day. Implemented stream processing, real-time aggregations, and interactive dashboards for monitoring key metrics.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Kafka</span>
+                        <span class="tech-tag">Spark Streaming</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-book"></i> Documentation</a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>ML Feature Store</h3>
+                    </div>
+                    <p class="project-description">Developed a centralized feature store for machine learning projects. Implemented feature computation, storage, and serving layers with support for both batch and real-time feature serving.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MLflow</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-book"></i> Documentation</a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Data Quality Framework</h3>
+                    </div>
+                    <p class="project-description">Created an automated data quality framework with customizable rules engine. Implemented data profiling, validation, and monitoring with alerts and detailed reporting capabilities.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Great Expectations</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">dbt</span>
+                        <span class="tech-tag">Snowflake</span>
+                        <span class="tech-tag">Slack API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-book"></i> Documentation</a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="card-header">
+                        <i class="fas fa-microchip"></i>
+                        <h3>IoT Data Pipeline</h3>
+                    </div>
+                    <p class="project-description">Built a scalable IoT data pipeline handling sensor data from thousands of devices. Implemented real-time processing, anomaly detection, and predictive maintenance capabilities.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS IoT</span>
+                        <span class="tech-tag">Kinesis</span>
+                        <span class="tech-tag">Lambda</span>
+                        <span class="tech-tag">TimeStreamDB</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-book"></i> Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding Profiles -->
+        <section id="profiles" class="section">
+            <h2>Coding Profiles</h2>
+            <div class="profiles-grid">
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                    <p class="profile-description">Check out my open-source contributions and personal projects.</p>
+                    <div class="profile-link">
+                        <a href="https://github.com/ashok-rajendran" target="_blank" class="profile-button">
+                            <i class="fab fa-github"></i>
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>LeetCode</h3>
+                    </div>
+                    <p class="profile-description">Problem-solving skills and coding challenges solutions.</p>
+                    <div class="profile-link">
+                        <a href="https://leetcode.com/u/AshokRajendran/" target="_blank" class="profile-button">
+                            <i class="fas fa-code"></i>
+                            View Solutions
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <i class="fab fa-hackerrank"></i>
+                        <h3>HackerRank</h3>
+                    </div>
+                    <p class="profile-description">Coding challenges and programming certifications.</p>
+                    <div class="profile-link">
+                        <a href="https://www.hackerrank.com/profile/ashok_rajendran" target="_blank" class="profile-button">
+                            <i class="fab fa-hackerrank"></i>
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <i class="fab fa-kaggle"></i>
+                        <h3>Kaggle</h3>
+                    </div>
+                    <p class="profile-description">Data science competitions and notebooks.</p>
+                    <div class="profile-link">
+                        <a href="https://www.kaggle.com/ashokrajendran" target="_blank" class="profile-button">
+                            <i class="fab fa-kaggle"></i>
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Tableau</h3>
+                    </div>
+                    <p class="profile-description">Data visualizations and interactive dashboards.</p>
+                    <div class="profile-link">
+                        <a href="https://public.tableau.com/app/profile/ashokrajendran" target="_blank" class="profile-button">
+                            <i class="fas fa-chart-bar"></i>
+                            View Dashboards
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Power BI</h3>
+                    </div>
+                    <p class="profile-description">Business intelligence reports and analytics.</p>
+                    <div class="profile-link">
+                        <a href="https://app.powerbi.com/home?experience=power-bi" target="_blank" class="profile-button">
+                            <i class="fas fa-chart-area"></i>
+                            View Reports
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>Hugging Face</h3>
+                    </div>
+                    <p class="profile-description">Machine learning models and notebooks.</p>
+                    <div class="profile-link">
+                        <a href="https://huggingface.co/ashok-rajendran" target="_blank" class="profile-button">
+                            <i class="fas fa-robot"></i>
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Anna University, Panimalar Engineering College, Chennai.<span class="company-date">Aug 2013 - Aug 2017</span></h3>
+                    </div>
+                    <p class="education-details">Bachelor of Engineering in Electrical and Electronics Engineering</p>
+                    <p class="education-description">Completed undergraduate studies with First Class, maintaining consistent academic performance throughout.</p>
+                    <div class="highlight-box">
+                        <h4>Final Year Project</h4>
+                        <p class="project-title">DC-DC Converter for BLDC Motor Using Ultracapacitor & Battery</p>
+                        <p class="project-description">Designed and implemented a hybrid power supply system to improve efficiency and performance in Brushless DC motor applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Life -->
+        <section class="section">
+            <h2>Beyond Code</h2>
+            <div class="card lifestyle-card">
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-mountain"></i>
+                        <p>Hiking</p>
+                        <p class="interest-description">Hiking and trekking the Himalayas. Love exploring new trails and challenging myself.</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-basketball-ball"></i>
+                        <p>Basketball</p>
+                        <p class="interest-description">Occasionally play basketball and enjoy staying active through the sport.</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-globe"></i>
+                        <p>Geopolitics</p>
+                        <p class="interest-description">Listen to a lot of geopolitical news and analysis.</p>
+                    </div>
+                </div>
+                <p class="lifestyle-text">Beyond my professional life, I'm an avid hiker, basketball player, and a keen follower of global affairs. I believe in maintaining a healthy work-life balance and continuously expanding my horizons through new experiences and challenges.</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2>Let's Connect</h2>
+            <div class="card contact-card">
+                <div class="contact-grid">
+                    <a href="mailto:ashok.rajendran@hotmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/r-ashok/" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Ashok. Built with <i class="fas fa-heart"></i></p>
+            <div class="footer-links">
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        const scrollBtn = document.getElementById('scrollToTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        };
+        scrollBtn.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
