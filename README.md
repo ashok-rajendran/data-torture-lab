@@ -16,3 +16,7 @@ This project simulates a comprehensive airline booking system dataset and builds
 ## Project 4: Praxis - SQL and Python Problems
 This project is to complete Leetcode, hackerrank, and other online DSA SQL/Python problems.  
 🔗 [Read more about this project](https://github.com/ashok-rajendran/data-torture-lab/wiki/Praxis-SQL-and-Python-Problems)
+
+## Project 5: Apple Products & Sales Analysis Project
+This project analyzes Apple product sales data to identify specific customer purchasing patterns, focusing on iPhone and AirPods purchases using PySpark in Databricks.
+🔗 [Read more about this project](https://github.com/ashok-rajendran/data-torture-lab/wiki/Apple-Analysis-Using-Pyspark)
