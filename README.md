@@ -11,6 +11,7 @@ Developed a Python-based automation framework to dynamically create and manage S
 
 ## Project 3: Airlines Data Engineering Project
 This project is about Airlines Analytics Simulation done purely on BigQuery using SQL.
+
 🔗 [Read more about this project](https://github.com/ashok-rajendran/data-torture-lab/wiki/BigQuery%E2%80%90Based-Airlines-Analytical-Simulation-Data-Engineering-Project)
 
 ## Project 4: Praxis - SQL and Python Problems
