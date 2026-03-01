@@ -10,7 +10,7 @@ Developed a Python-based automation framework to dynamically create and manage S
 🔗 [Read more about this project](Automated-Snowflake-View-Creation)
 
 ## Project 3: Airlines Data Engineering Project
-This project simulates a comprehensive airline booking system dataset and builds a scalable data pipeline for ingestion, storage, and analysis using Databricks Delta Lake.  
+This project is about Airlines Analytics Simulation done purely on BigQuery using SQL.
 🔗 [Read more about this project](https://github.com/ashok-rajendran/data-torture-lab/wiki/BigQuery%E2%80%90Based-Airlines-Analytical-Simulation-Data-Engineering-Project)
 
 ## Project 4: Praxis - SQL and Python Problems
